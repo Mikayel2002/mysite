@@ -4,6 +4,7 @@ from blog.models import Article
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
+
 def create_article(request):
     form = ArticleModelForm()
     if request.method == "POST":
